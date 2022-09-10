@@ -39,7 +39,7 @@ if uploaded_file:
     st.dataframe(df)
     groupby_column = st.selectbox(
         'What would you like to analyse?',
-        ('Ship Mode', 'Segment', 'Category', 'Sub-Category'),
+        ('Sub-Category', 'Segment', 'Category', 'Sub-Category', 'Ship Mode'),
     )
 
 # uploaded_cvs_file = st.file_uploader('Choose a CSV file', type='csv')
