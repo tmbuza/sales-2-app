@@ -1,9 +1,8 @@
 import streamlit as st  # pip install streamlit
 import pandas as pd  # pip install pandas
-!pip install plotly-express
 import plotly.express as px  # pip install plotly-express
-# import base64  # Standard Python Module
-# from io import StringIO, BytesIO  # Standard Python Module
+import base64  # Standard Python Module
+from io import StringIO, BytesIO  # Standard Python Module
 
 
 def generate_excel_download_link(df):
@@ -68,9 +67,9 @@ if uploaded_file:
         title=f'<b>Sales & Profit by {groupby_column}</b>'
     )
     st.plotly_chart(fig)
-    # 
-    # # -- DOWNLOAD SECTION
-    # st.subheader('Downloads:')
-    # generate_excel_download_link(df_grouped)
-    # generate_html_download_link(fig)
+
+    # -- DOWNLOAD SECTION
+    st.subheader('Downloads:')
+    generate_excel_download_link(df_grouped)
+    generate_html_download_link(fig)
     # 
