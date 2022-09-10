@@ -1,5 +1,6 @@
 import streamlit as st  # pip install streamlit
 import pandas as pd  # pip install pandas
+!pip install plotly-express
 import plotly.express as px  # pip install plotly-express
 # import base64  # Standard Python Module
 # from io import StringIO, BytesIO  # Standard Python Module
